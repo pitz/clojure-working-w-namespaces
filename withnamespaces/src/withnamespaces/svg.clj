@@ -49,8 +49,8 @@
     "svg 'template"
     [width height locations]
     (str "<svg height=\"" height "\" width=\"" width "\">"
-        "<g transform=\"translate(0," height ")\">"
-        "<g transform=\"rotate(-90)\">"
+         "<g transform=\"translate(0," height ")\">"
+         "<g transform=\"rotate(-90)\">"
         (-> (transform width height locations)
             points
             line)
